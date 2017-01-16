@@ -1,0 +1,134 @@
+---
+title: "An -ome of our own"
+subtitle: "Toward a more reproducible, robust, and insightful science of human behavior"
+author: "Rick O. Gilmore"
+affiliation: "Penn State"
+date: "`r Sys.time()`"
+output:
+  ioslides_presentation:
+    widescreen: true
+    incremental: false
+    transition: default
+    smart: true
+    smaller: false
+    self_contained: true
+---
+
+# Prelude
+
+## Motivation
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/N2zK3sAtr-4" frameborder="0" allowfullscreen></iframe>
+
+# Oh give me an -ome...
+
+## Outline
+
+- We've got problems...right here in River City
+- Thinking big, REALLY BIG, about how to solve them
+
+# Problems facing social and behavioral science
+
+## Reproducibility
+
+## What does reproducibility mean?
+
+- Goodman
+
+## Rich man, poor man
+
+- Lots of data
+- Can't get to it
+- Vertically siloed
+- Commercially controlled
+
+## Underpowered
+
+## What's at stake?
+
+- Long history of science denialism/marginalization
+    + Consequences of disbelief
+- Science denialism largely sociocultural
+- Problems we face require scientific solutions
+    + technical
+    + social/political/economic
+    + behavioral
+
+# Smaller-scale solutions
+
+## Munafo et al. 2017 manifesto
+
+## Transparency and Openness Promotion Guidelines
+
+## Better training
+
+## Literate Programming
+
+- RStudio
+- Jupyter notebooks
+- Wide open science
+
+## Data and materials sharing
+
+- Open Science Framework
+- Databrary
+
+## Databrary.org
+
+## Video essential for reproducibility
+
+## Changing journal, institutional practices
+
+# REALLY BIG solutions
+
+<!-- 
+## Big science in other fields
+
+- Hubble Space Telescope
+- Human Genome Project
+- Human Connectome Project
+- Personalized medicine/eHealth
+--->
+
+---
+
+<div class="centered">
+<a href="https://en.wikipedia.org/wiki/Hubble_Ultra-Deep_Field">
+<img src="https://upload.wikimedia.org/wikipedia/commons/6/69/NASA-HS201427a-HubbleUltraDeepField2014-20140603.jpg">
+</a>
+</div>
+
+<div class="notes">
+The Hubble Ultra Deep Field. Taken over 3.5 months in 2003-04. Contains an estimated 10,000 galaxies, and because time and space collapse at astronomical distances, looks back ~13 billion years, or 400-800 years before the big bang.
+</div>
+
+## What's big social and behavioral science look like?
+
+- See Gilmore 2015 about Developmental Science.
+- U.S. Census
+- Panel Study on Income Dynamics (PSID)
+- AdHealth
+- ECLS-B
+- But, National Children's Study (also in U.K.)
+
+## Data hypercube
+
+## Data collection
+
+## Data harmonization and preparation
+
+- Essential data linkages
+    + People
+    + Locations
+    + Dates and times
+    
+## Data storage and sharing
+
+## Respecting privacy
+
+- Give participants meaningful ownership over their data
+- Give participants value for contributing
+
+## Analysis and Inquiry
+
+## Reporting and Publication

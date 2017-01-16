@@ -1,2 +1,3 @@
 # soda-2017-01-31
-Talk to the Social Data Analytics (SoDA) 501 students
+
+Invited talk to the Penn State Social Data Analytics (SoDA) 501 course students entitled "An -ome of our own: Toward a more reproducible, robust, and insightful science of human behavior".
