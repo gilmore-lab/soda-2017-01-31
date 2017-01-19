@@ -4,8 +4,10 @@ subtitle: "Toward a more reproducible, robust, and insightful science of human b
 author: "Rick O. Gilmore"
 affiliation: "Penn State"
 date: "`r Sys.time()`"
+bibliography: bib/soda.bib
 output:
   ioslides_presentation:
+    css: css/gilmore-ioslides.css
     widescreen: true
     incremental: false
     transition: default
@@ -20,81 +22,260 @@ output:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/N2zK3sAtr-4" frameborder="0" allowfullscreen></iframe>
 
+<div class="notes">
+I am Dr. Judy Benign...
+</div>
+
 # Oh give me an -ome...
 
 ## Outline
 
 - We've got problems...right here in River City
-- Thinking big, REALLY BIG, about how to solve them
+- Bites at the apple
+- Thinking big, REALLY BIG, about solutions
 
 # Problems facing social and behavioral science
 
-## Reproducibility
+## Misconduct/fraud
 
-## What does reproducibility mean?
+- [Marc Hauser](http://www.sciencemag.org/news/2012/09/harvard-psychology-researcher-committed-fraud-us-investigation-concludes)
+    - <http://www.sciencemag.org/news/2014/05/harvard-misconduct-investigation-psychologist-released>
+- [Diederik Stapel](http://www.nytimes.com/2013/04/28/magazine/diederik-stapels-audacious-academic-fraud.html?pagewanted=all&_r=0)
+    - [Commentary](http://root.bryancavemedia.com/marketing/downloads/schooled_in_fraud_compliance_lessons_from_lying_dutchman_killingsworth.pdf)
 
-- Goodman
+## Marc Hauser
+
+- Evolutionary/Comparative Psychologist, Professor at Harvard
+- Resigned 2011 after internal investigation found him responsible for research misconduct
+- Details see [2012 report by NIH Office of Research Integrity (ORI)](https://grants.nih.gov/grants/guide/notice-files/NOT-OD-12-149.html) and [Hauser's response](http://archive.boston.com/whitecoatnotes/2012/09/05/marc-hauser-responds-federal-finding-scientific-misconduct/spzRWEVIPKA4BUu8wi8t8J/story.html). 
+
+## Diederik Stapel
+
+- Dean of the School of Social and Behavioral Sciences at Tilburg University
+- teacher of Scientific Ethics course
+- Fraud investigation launched when 3 grad students noticed anomalies -- duplicate entries in data tables
+- Stapel confessed, lost position, gave up Ph.D., wrote a book
+- Details in [Flawed science: The fraudulent research practices of social psychologist Diederik Stapel](http://pubman.mpdl.mpg.de/pubman/item/escidoc:1569964:8/component/escidoc:1569966/Stapel_Investigation_Final_report.pdf)
+
+## [Reproducibility Project: Psychology](https://osf.io/ezcuj/)
+
+- Attempt to replicate 100 experimental and correlational studies published in three psychology journals in 2008 using high-powered designs and original materials when available. 
+- Materials, data, protocols, analysis code shared via the [Open Science Framework (OSF)](http://osf.io) from the [Center for Open Science (COS)](http://cos.io)
+
+## Results published in [[@collaboration_estimating_2015]](http://doi.org/10.1126/science.aac4716)
+
+- 39/98 (39.7%) replication attempts were successful
+- 97% of original studies reported statistically significant results vs. 36% of replications
+
+---
+
+<div class="centered">
+<img src="https://raw.githubusercontent.com/gilmore-lab/psu-child-study-ctr-talk-2016-10-28/master/img/replication-effect-size.jpg" height=500px>
+
+[[@collaboration_estimating_2015]](http://doi.org/10.1126/science.aac4716)
+</div>
+
+## So, did the studies replicate?
+
+- [[@gilbert_comment_2016]](http://doi.org/10.1126/science.aad7243)
+- Samples not equal
+    + Sampling error differences predicts < 100% reproducibility
+
+---
+
+- Protocols not identical
+    + Only 69% of original PIs "endorsed" replication protocol. Replication rate 4x higher (59.7% vs. 15.4%) in studies with endorsed protocol.
+    + What is CI of *expected* effect sizes given sample/methodological variability? [Many Labs project](https://osf.io/wx7ck/wiki/home/)
+- [[@collaboration_estimating_2015]](http://doi.org/10.1126/science.aac4716) *"...seriously underestimated reproducibility of psychological science."*
+
+## Not just social & behavioral science
+
+- [Reproducibility initiative in cancer biology](http://blogs.nature.com/news/2013/10/initiative-gets-1-3-million-to-verify-findings-of-50-high-profile-cancer-papers.html). 
+- [Details on OSF](https://osf.io/e81xl/)
+
+---
+
+<iframe src="http://www.nature.com/news/cancer-reproducibility-project-releases-first-results-1.21304">
+</iframe>
+
+## Questions about reproducibility
+
+- What does it mean to evaluate reproducibility across a field or subfield?
+- Are we clear about what 'reproducibility' means? [[@goodman_what_2016]](http://doi.org/10.1126/scitranslmed.aaf5027)
+
+---
+
+- **Methods** reproducibility refers to *"...the ability to implement, as exactly as possible, the experimental and computational procedures, with the same data and tools, to obtain the same results."*
+- **Results** reproducibility *"(previously described as replicability) refers to obtaining the same results from the conduct of an independent study whose procedures are as closely matched to the original experiment as possible."*
+- **Inferential** reproducibility *"...refers to the drawing of qualitatively similar conclusions from either an independent replication of a study or a reanalysis of the original study"*
+
+[[@goodman_what_2016]](http://doi.org/10.1126/scitranslmed.aaf5027)
+
+## Sampling challenges
+
+- Much (lab-based) data collected are from **W**estern, **E**ducated **I**ndustrialized, **R**ich, **D**emocratic (WEIRD) populations [[@henrich_weirdest_2010]](http://doi.org/10.1017/S0140525X0999152X)
+- Studies underpowered [[@maxwell_persistence_2004]](http://doi.org/10.1037/1082-989X.9.2.147)
+
+<!-- Scrolling page -->
+<!-- http://stackoverflow.com/q/38260799 -->
+<style>
+slides > slide { overflow: scroll; }
+slides > slide:not(.nobackground):before {
+  background: none;
+  }
+slides > slide:not(.nobackground):after {
+  content: '';
+  background: none;
+  }
+}
+</style>   
+
+## [[@szucs_empirical_2016]](http://doi.org/10.1101/071530)
+
+"We have empirically assessed the distribution of published effect sizes and estimated power by extracting more than 100,000 statistical records from about 10,000 cognitive neuroscience and psychology papers published during the past 5 years. The reported median effect size was d=0.93 (inter-quartile range: 0.64-1.46) for nominally statistically significant results and d=0.24 (0.11-0.42) for non-significant results. <span class="red">Median power to detect small, medium and large effects was 0.12, 0.44 and 0.73</span>, reflecting no improvement through the past half-century. Power was lowest for cognitive neuroscience journals. 14% of papers reported some statistically significant results, although the respective F statistic and degrees of freedom proved that these were non-significant; <span class="red">p value errors positively correlated with journal impact factors. False report probability is likely to exceed 50\% for the whole literature</span>. In light of our findings the recently reported low replication success in psychology is realistic and worse performance may be expected for cognitive neuroscience."
 
 ## Rich man, poor man
 
-- Lots of data
-- Can't get to it
+- New sources of (non-lab-based) data from wearables, social media, electronic education/medical records
 - Vertically siloed
-- Commercially controlled
+- Widespread access for research threatens 
+    - individual privacy
+    - intellectual property
+ 
+---
 
-## Underpowered
+<div class="centered">
+<img src="http://lh3.googleusercontent.com/RoMMyCauMaIccoJZEBWPiBi_l9NQL4AAFYEm8orBh9wMruI6oE6Qw_voIHcWAoVptTUR_uLWiz4eMnZt5TfUCcd8WIwfARQGPE4vWt8C" height=225pix>
+
+<img src="http://blog.storyful.com/wp-content/uploads/sites/5/2016/04/Facebook-create.png" height=225px>
+</div>
 
 ## What's at stake?
 
 - Long history of science denialism/marginalization
+    + Galileo, Darwin, Mann
     + Consequences of disbelief
 - Science denialism largely sociocultural
-- Problems we face require scientific solutions
+    + Credibility of 'statistics' in question
+
+---
+
+- Problems humans face in 21st c. require scientific solutions
     + technical
     + social/political/economic
     + behavioral
+- Fraud/reproducibility problems undermine public trust
+- Address challenges before opponents do
+- Maintain a robust, non-commercial science of human behavior
 
-# Smaller-scale solutions
+# Small-scale solutions
 
-## Munafo et al. 2017 manifesto
+## [Transparency and opennness promotion (TOP) guidelines](https://osf.io/9f6gx/)
 
-## Transparency and Openness Promotion Guidelines
+- [[@nosek_promoting_2015]](http://doi.org/10.1126/science.aab2374)
 
-## Better training
+---
 
-## Literate Programming
+- Citation
+- Data transparency
+- Analytic methods (code) transparency
+- Design and analysis transparency
+- Preregistration of studies
+- Preregistration of analysis plans
+- Replication
 
-- RStudio
-- Jupyter notebooks
-- Wide open science
+## Who's signed on and who hasn't?
 
-## Data and materials sharing
+- [List of TOP signatories](https://cos.io/top/#list)
+- Declines
+    + [[@lash2015declining]](http://journals.lww.com/epidem/Fulltext/2015/11000/Declining_the_Transparency_and_Openness_Promotion.1.aspx)
+    + Implementation would run counter to efforts to *"...maintain an editorial policy that encourages creativity and novelty, resists regimentation of research practices to the extent practicable, and invites challenges to current scientific habits and conventions through innovation in epidemiologic theory and practice."*
 
-- Open Science Framework
-- Databrary
+## On the other hand...
 
-## Databrary.org
+- New editorial from European Journal of Personality
+    + <https://twitter.com/i/web/status/818460818102697985>
+
+## [[@munafo_manifesto_2017]](http://doi.org/10.1038/s41562-016-0021) manifesto
+
+<div class="centered">
+<a href="http://www.nature.com/articles/s41562-016-0021/figures/1">
+<img src="http://www.nature.com/article-assets/npg/nathumbehav/2017/s41562-016-0021/images_hires/w926/s41562-016-0021-f1.jpg" height=500px>
+</a>
+</div>
+
+## Better methodology training
+
+- [Literate Programming](http://www.literateprogramming.com/)
+    - [RStudio](http://rstudio.com) and [R Markdown](http://rmarkdown.rstudio.com/)
+    - [Jupyter](http://jupyter.org) notebooks
+    - Electronic lab notebooks, talks, reports, articles...
+- [Software Carpentry](https://software-carpentry.org/)
+- Version control (e.g., GitHub)
+
+## Data (materials and code) should be
+
+- **F**indable, **A**ccessible, **I**nteroperable, and **R**euseable ([FAIR Data Principles](https://www.force11.org/group/fairgroup/fairprinciples)).
+- [Published](https://en.wikipedia.org/wiki/Data_publishing#Paper) alongside articles or in data journals, e.g. [Nature Scientific Data](http://www.nature.com/sdata/).
+    + Gilmore on editorial board.
+
+## Data (materials and code) should be
+
+- Stored in data repositories
+    + [Open Science Framework (OSF)](https://osf.io/)
+    + [Inter-university Consortium for Political and Social Research (ICPSR)](http://www.icpsr.umich.edu)
+    + [Dataverse](http://dataverse.org)
+    + [Dryad Data Repository](http://datadryad.org)
+    + [Databrary](http://databrary.org)
+
+---
+
+<iframe src="https://databrary.org">
+</iframe>
+
+<div class="notes">
+The Databrary data library.
+</div>
+
+## [Databrary.org](http://databrary.org)
+
+- Specializes in storing, sharing video
+- Video captures behavior unlike other methods, but is *identifiable*
+- Policy framework for sharing identifiable data
+    + **Permission to share** -> builds on informed consent
+    + **Restricted access** for (institutionally) authorized researchers
 
 ## Video essential for reproducibility
 
-## Changing journal, institutional practices
+> *Videos of empirical procedures can and should be viewed as the gold standard of documentation across the behavioral sciences. Indeed, were the use of video for this purpose more widespread, many disagreements about whether empirical replications truly reproduced the original experimental conditions would be moot (Collaboration, 2015; Gilbert et al., 2016). The power of video to document procedures should also be an attractive solution for scientists in fields that do not commonly collect or analyze video.*
+
+Gilmore & Adolph (in press)
+
+## Changing practices of researchers, institutions, journals, and funders
+
+<iframe src="http://www.nature.com/articles/s41562-016-0021/tables/1">
+</iframe>
+Source: <http://www.nature.com/articles/s41562-016-0021/tables/1>
+
+## Your thoughts?
 
 # REALLY BIG solutions
 
-<!-- 
-## Big science in other fields
+## Thinking big... {.flexbox .vcenter}
 
-- Hubble Space Telescope
-- Human Genome Project
-- Human Connectome Project
-- Personalized medicine/eHealth
---->
+<div class="centered">
+<img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/HST-SM4.jpeg" height=450px>
+</div>
+
+<div class="notes">
+The space reference is apt. I think there might be something we can learn from other big data science projects like the Hubble Space Telescope.
+</div>
 
 ---
 
 <div class="centered">
 <a href="https://en.wikipedia.org/wiki/Hubble_Ultra-Deep_Field">
-<img src="https://upload.wikimedia.org/wikipedia/commons/6/69/NASA-HS201427a-HubbleUltraDeepField2014-20140603.jpg">
+<img src="https://upload.wikimedia.org/wikipedia/commons/6/69/NASA-HS201427a-HubbleUltraDeepField2014-20140603.jpg" height=500px>
 </a>
 </div>
 
@@ -102,33 +283,331 @@ output:
 The Hubble Ultra Deep Field. Taken over 3.5 months in 2003-04. Contains an estimated 10,000 galaxies, and because time and space collapse at astronomical distances, looks back ~13 billion years, or 400-800 years before the big bang.
 </div>
 
-## What's big social and behavioral science look like?
+---
 
-- See Gilmore 2015 about Developmental Science.
-- U.S. Census
-- Panel Study on Income Dynamics (PSID)
-- AdHealth
-- ECLS-B
-- But, National Children's Study (also in U.K.)
+<div class="centered">
+<img src="http://www.universetoday.com/wp-content/uploads/2008/09/lhc-sim.jpg" width=800px>
+</div>
 
-## Data hypercube
+<div class="notes">
+Or, the Large Hadron Collider.
+</div>
 
-## Data collection
+---
+
+<div class="centered">
+<img src="https://s-media-cache-ak0.pinimg.com/736x/70/3f/62/703f621c95bb7b3c5771ddf926090fb6.jpg" height=500px>
+</div>
+
+<div class="notes">
+Cover of Nature issue in 2003 with the release of a 99% complete draft of the human genome.
+</div>
+
+---
+
+<div class="centered">
+<img src="http://sgugenetics.pbworks.com/f/1301513883/genome_project_cartoon.png" height=500px>
+</div>
+
+<div class="notes">
+(Cartoon of human genome). "When I asked what little girls were made of, I was hoping we would say sugar and spice."
+</div>
+
+---
+
+<div class="centered">
+<img src="https://lh6.googleusercontent.com/-5_RZc-_XdY0/ThMcACUSwPI/AAAAAAAAEKE/RM_zQGqV1co/Schowek.jpg" height=500px>
+</div>
+
+<div class="notes">
+Human Connectome Project image.
+</div>
+
+---
+
+<div class="centered">
+<a href="https://www.neuroscienceblueprint.nih.gov/connectome/">
+<img src="https://www.neuroscienceblueprint.nih.gov/connectome/NIH_Functional-Connectivity-Matrix-full.png" height=500px>
+</a>
+</div>
+
+<div class="notes">
+Connectivity matrix from human connectome project data.
+</div>
+
+## Imagine a 'Databservatory' for human behavior
+
+<div class="centered">
+<img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/HST-SM4.jpeg" height=450px>
+</div>
+
+## Scale {.flexbox .vcenter .smaller}
+
+<div class="centered">
+<img src="https://www.nap.edu/cover/9824/450" height=450px>
+</div>
+
+Shonkoff, J. P., & Phillips, D. A. (Eds.). (2000). From neurons to neighborhoods: The science of early childhood development. National Academies Press.
+
+<div class="notes">
+From neurons to neighborhoods.
+</div>
+
+---
+
+<div class="centered">
+<img src="https://raw.githubusercontent.com/gilmore-lab/psu-stats-smacs-2016-talk/master/img/datacube-beh-sci.png" height=500px>
+</div>
+
+----
+
+<div class="centered">
+<img src="http://artwolfe.com/wp-content/uploads/2014/05/MosaicOfChildren-400x500.jpg" height=500px>
+</div>
+
+----
+
+<div class="centered">
+<img src="https://raw.githubusercontent.com/psu-psychology/psy-511-scan-fdns/master/lectures/img/churchland-levels-of-analysis.gif" height=450px>
+</div>
+
+<div class="notes">
+Even with the domain of neuroscience, we recognize that the phenomena we seek to understand operate across multiple spatial and temporal scales.
+</div>
+
+----
+
+<div class="centered"
+<a href="http://doi.org/10.1038/nrn1536">
+<img src="https://raw.githubusercontent.com/gilmore-lab/psu-child-study-ctr-talk-2016-10-28/master/img/grinvald-nrn1536-f7.jpg" height=500px>
+</a>
+</div>
+
+<div class="notes">
+And that no single method we use operates across the spatial and temporal scales of the phenomena we want to understand.
+</div>
+
+## What would this micro/macro/telescope look like?
+
+>- Recruiting -- larger, more diverse samples
+>- Data collection -- more data types, allow linkage across levels
+>- Data curation/management -- easy/automatic, standardized formats
+>- Data sharing -- PI controls when, permission levels
+
+----
+
+>- Data mining, visualization, linking
+>- Search, filter by participant characteristics, tasks/measures, geo/temporal factors
+>- Analysis in the "cloud"
+>- Automatic versioning, history
+
+----
+
+<div class="centered">
+<img src="https://raw.githubusercontent.com/gilmore-lab/psu-child-study-ctr-talk-2016-10-28/master/img/first-families.jpg" height = 450px>
+</div>
+
+----
+
+<div class="centered">
+<img src="https://raw.githubusercontent.com/gilmore-lab/psu-child-study-ctr-talk-2016-10-28/master/img/psychology-subject-pool.jpg" height = 450px>
+</div>
+
+---
+
+<div class="centered">
+<img src="https://raw.githubusercontent.com/gilmore-lab/psu-child-study-ctr-talk-2016-10-28/master/img/geri.jpg" width = 800px>
+</div>
+
+    
+---
+
+<div class="centered">
+<img src="https://raw.githubusercontent.com/gilmore-lab/psu-child-study-ctr-talk-2016-10-28/master/img/dream.jpg" width=800px>
+</div>
+
+----
+
+<div class="centered">
+<a href="https://autismandbeyond.researchkit.duke.edu/">
+<img src="https://raw.githubusercontent.com/psu-psychology/psy-511-scan-fdns/master/lectures/img/autism-and-beyond.jpg" width=800px>
+</a>
+</div>
+
+----
+
+<div class="centered">
+<a href="https://www.mturk.com">
+<img src="https://raw.githubusercontent.com/gilmore-lab/psu-child-study-ctr-talk-2016-10-28/master/img/mturk.jpg" width=800px>
+</a>
+</div>
+
+----
+
+<div class="centered">
+<img src="https://raw.githubusercontent.com/gilmore-lab/psu-child-study-ctr-talk-2016-10-28/master/img/q_logo_banner.png" width=800px>
+</div>
+
+----
+
+<div class="centered">
+<a href="https://lookit.mit.edu/">
+<img src="img/lookit.jpg" height=500px>
+</a>
+</div>
+
+----
+
+<div class="centered">
+<img src="https://nyu.databrary.org/web/images/logo/databrary-nav.svg" width=800px>
+</div>
+
+## The front end
+
+>- App/web service
+>- Linking researchers with participants (or parents)
+>- Participants own/control their data, determine level of sharing (like datawallet.io)
+>- Lab, computer/smart-phone based, survey tasks
+>- Data visualizations, dashboard
+>- 1,000+ psych pool/semester, 500K PSU alumni, 1M friends
+
+----
+
+<div class="centered">
+<img src="https://raw.githubusercontent.com/gilmore-lab/psu-child-study-ctr-talk-2016-10-28/master/img/meesearch-logo.jpg" width=900px>
+</div>
+
+## The middle
+
+<div class="centered">
+<img src="https://nyu.databrary.org/web/images/logo/databrary-nav.svg" width=800px>
+
+<img src="https://raw.githubusercontent.com/gilmore-lab/psu-child-study-ctr-talk-2016-10-28/master/img/osf.jpg">
+</div>
+
+----
+
+<div class="centered">
+<img src="https://raw.githubusercontent.com/gilmore-lab/psu-child-study-ctr-talk-2016-10-28/master/img/spatial-temporal-resolution-new.jpg" height=500px>
+</div>
+
+<div class="notes">
+The Databservatory will empower the evaluation and analyses of data streams at multiple levels of spatial and temporal resolution.
+</div>
+
+## Analytic/visualization/data publication engine
+
+<div class="centered">
+<img src="https://www.rstudio.com/wp-content/uploads/2016/09/RStudio-Logo-Blue-Gray-125.png">
+
+<img src="http://jupyter.org/assets/nav_logo.svg">
+
+</div>
+
+----
+
+<iframe src="http://datausa.io">
+</iframe>
+
+## Problems to solve
+
+## Problems ~~to~~ solved
 
 ## Data harmonization and preparation
 
+- Astro, geo, bio-sciences have common frames of reference, liking variables
 - Essential data linkages
     + People
     + Locations
+        - Lat/Lon or Census Block Group/Tract
     + Dates and times
-    
-## Data storage and sharing
 
 ## Respecting privacy
+
+- Ask participants permission to share with researchers for research purposes
+
+<div class="centered">
+<img src="https://raw.githubusercontent.com/gilmore-lab/psu-child-study-ctr-talk-2016-10-28/master/img/databrary-release-levels.jpg" height=500px>
+</div>
+
+## When asked, most participants say yes {.flexbox .vcenter .smaller}
+
+<div class="centered">
+<img src="https://raw.githubusercontent.com/gilmore-lab/psu-child-study-ctr-talk-2016-10-28/master/img/tamis-lemonda-permission.jpg" height=450px>
+</br>
+Tamis-LeMonda, C. (2013). <http://doi.org/10.17910/B7CC74>. 
+</div>
+
+----
+
+<div class="centered">
+<img src="https://raw.githubusercontent.com/gilmore-lab/psu-child-study-ctr-talk-2016-10-28/master/img/personal-genome-project.jpg" width = 800px>
+</div>
+
+----
+
+<div class="centered">
+<img src="https://raw.githubusercontent.com/gilmore-lab/psu-child-study-ctr-talk-2016-10-28/master/img/open-humans-project.jpg" height = 500px>
+</div>
+
+----
+
+<div class="centered">
+<img src="http://www.humanconnectome.org/img/header-bg.png">
+
+<http://www.humanconnectome.org/>
+</div>
+
+<div class="notes">
+The Human Connectome Project
+</div>
+
+----
+
+<div class="centered">
+<a href="https://lookit.mit.edu/">
+<img src="https://raw.githubusercontent.com/gilmore-lab/psu-child-study-ctr-talk-2016-10-28/master/img/lookit.jpg" height=500px>
+</a>
+</div>
+
+
+# Respecting privacy
 
 - Give participants meaningful ownership over their data
 - Give participants value for contributing
 
-## Analysis and Inquiry
+## Clarifying the value of participating in research
 
-## Reporting and Publication
+- 'Free' service (email, calendar, search, communications platform) vs.
+
+- Contribute to public good
+- Aid discovery
+- Curiosity
+- Help institution, community, society
+
+## What do you think?
+
+- Shall we build it?
+- After all...
+
+----
+
+<div class="centered">
+<img src="https://raw.githubusercontent.com/gilmore-lab/psu-stats-smacs-2016-talk/master/img/we_are_penn_state_0.png" width=800px>
+</div>
+
+----
+
+<div class="centered">
+<img src="https://raw.githubusercontent.com/gilmore-lab/psu-stats-smacs-2016-talk/master/img/we_research_penn_state_0.jpg" width=800px>
+</div>
+
+## Stack {.smaller}
+
+This talk was produced in [RStudio](http://rstudio.com) version 1.044 on `r Sys.Date()`. The code used to generate the slides can be found at <http://github.com/gilmore-lab/soda-2017-01-31/>. Information about the R Session that produced the code is as follows:
+
+```{r session-info}
+sessionInfo()
+```
+
+## References {.smaller}
