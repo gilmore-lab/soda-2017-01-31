@@ -91,12 +91,55 @@ I am Dr. Judy Benign...
 ## Not just social & behavioral science
 
 - [Reproducibility initiative in cancer biology](http://blogs.nature.com/news/2013/10/initiative-gets-1-3-million-to-verify-findings-of-50-high-profile-cancer-papers.html). 
-- [Details on OSF](https://osf.io/e81xl/)
+    - [Details on OSF](https://osf.io/e81xl/)
+- Significant concerns about reproducibility of biomedical science findings have been raised:  [[@begley_drug_2012]](http://doi.org/10.1038/483531a) and [[@prinz_believe_2011]](http://doi.org/10.1038/nrd3439-c1) 
 
 ---
 
 <iframe src="http://www.nature.com/news/cancer-reproducibility-project-releases-first-results-1.21304">
 </iframe>
+
+---
+
+<div class="centered">
+<a href="http://www.nature.com/polopoly_fs/7.36716.1469695923!/image/reproducibility-graphic-online1.jpeg_gen/derivatives/landscape_630/reproducibility-graphic-online1.jpeg" height=450px>
+<img src="http://www.nature.com/polopoly_fs/7.36716.1469695923!/image/reproducibility-graphic-online1.jpeg_gen/derivatives/landscape_630/reproducibility-graphic-online1.jpeg">
+</a>
+
+[[@baker_1500_2016]](http://doi.org/10.1038/533452a)
+</div>
+
+<div class="notes">
+Results from a survey of 1,500 scientists by Nature in 2016.
+</div>
+
+---
+
+<div class="centered">
+<a href="http://www.nature.com/polopoly_fs/7.36718.1464174471!/image/reproducibility-graphic-online3.jpg_gen/derivatives/landscape_630/reproducibility-graphic-online3.jpg">
+<img src="http://www.nature.com/polopoly_fs/7.36718.1464174471!/image/reproducibility-graphic-online3.jpg_gen/derivatives/landscape_630/reproducibility-graphic-online3.jpg">
+</a>
+
+[[@baker_1500_2016]](http://doi.org/10.1038/533452a)
+</div>
+
+<div class="notes">
+Results from a survey of 1,500 scientists by Nature in 2016.
+</div>
+
+---
+
+<div class="centered">
+<a href="http://www.nature.com/polopoly_fs/7.36719.1464174488!/image/reproducibility-graphic-online4.jpg_gen/derivatives/landscape_630/reproducibility-graphic-online4.jpg">
+<img src="http://www.nature.com/polopoly_fs/7.36719.1464174488!/image/reproducibility-graphic-online4.jpg_gen/derivatives/landscape_630/reproducibility-graphic-online4.jpg">
+</a>
+
+[[@baker_1500_2016]](http://doi.org/10.1038/533452a)
+</div>
+
+<div class="notes">
+Results from a survey of 1,500 scientists by Nature in 2016.
+</div>
 
 ## Questions about reproducibility
 
@@ -169,6 +212,20 @@ slides > slide:not(.nobackground):after {
 - Maintain a robust, non-commercial science of human behavior
 
 # Small-scale solutions
+
+---
+
+<div class="centered">
+<a href="http://www.nature.com/polopoly_fs/7.36727.1464174506!/image/reproducibility-graphic-online5.jpg_gen/derivatives/landscape_630/reproducibility-graphic-online5.jpg">
+<img src="http://www.nature.com/polopoly_fs/7.36727.1464174506!/image/reproducibility-graphic-online5.jpg_gen/derivatives/landscape_630/reproducibility-graphic-online5.jpg">
+</a>
+
+[[@baker_1500_2016]](http://doi.org/10.1038/533452a)
+</div>
+
+<div class="notes">
+Going back to the results from that survey of 1,500 scientists by Nature in 2016.
+</div>
 
 ## [Transparency and opennness promotion (TOP) guidelines](https://osf.io/9f6gx/)
 
