@@ -16,6 +16,24 @@ output:
     self_contained: true
 ---
 
+# About
+
+---
+
+- Associate Professor of Psychology
+- Founding Director of Human Imaging at Penn State's [SLEIC](http://imaging.psu.edu)
+- Co-founder and Co-Director of the [Databrary.org](http://databrary.org) digital library
+- A.B., Cognitive Science, Brown; M.S. & Ph.D., Cognitive Neuroscience, Carnegie Mellon University
+- Folk music, theatre, cycling, hiking, paddling, amateur radio (K3ROG), poetry
+- <http://personal.psu.edu/rog1>, <http://gilmore-lab.github.io>
+
+## Acknowledgments
+
+- [NSF BCS-1238599](http://www.nsf.gov/awardsearch/showAward?AWD_ID=1238599&HistoricalAwards=false)
+- [NICHD U01-HD-076595](https://projectreporter.nih.gov/project_info_description.cfm?aid=8531595&icde=15908155&ddparam=&ddvalue=&ddsub=&cr=1&csb=default&cs=ASC)
+- [Society for Research in Child Development (SRCD)](http://srcd.org)
+- NYU Libraries, NYU IT, IRB, and OSP
+
 # Prelude
 
 ## Motivation
@@ -52,7 +70,7 @@ I am Dr. Judy Benign...
 ## Diederik Stapel
 
 - Dean of the School of Social and Behavioral Sciences at Tilburg University
-- teacher of Scientific Ethics course
+- Teacher of Scientific Ethics course
 - Fraud investigation launched when 3 grad students noticed anomalies -- duplicate entries in data tables
 - Stapel confessed, lost position, gave up Ph.D., wrote a book
 - Details in [Flawed science: The fraudulent research practices of social psychologist Diederik Stapel](http://pubman.mpdl.mpg.de/pubman/item/escidoc:1569964:8/component/escidoc:1569966/Stapel_Investigation_Final_report.pdf)
@@ -487,7 +505,7 @@ And that no single method we use operates across the spatial and temporal scales
 
 <div class="centered">
 <a href="https://autismandbeyond.researchkit.duke.edu/">
-<img src="https://raw.githubusercontent.com/psu-psychology/psy-511-scan-fdns/master/lectures/img/autism-and-beyond.jpg" width=800px>
+<img src="https://raw.githubusercontent.com/gilmore-lab/psu-child-study-ctr-talk-2016-10-28/master/img/autism-and-beyond.jpg" width=800px>
 </a>
 </div>
 
@@ -509,7 +527,7 @@ And that no single method we use operates across the spatial and temporal scales
 
 <div class="centered">
 <a href="https://lookit.mit.edu/">
-<img src="img/lookit.jpg" height=500px>
+<img src="https://raw.githubusercontent.com/gilmore-lab/psu-child-study-ctr-talk-2016-10-28/master/img/lookit.jpg" height=500px>
 </a>
 </div>
 
@@ -523,7 +541,7 @@ And that no single method we use operates across the spatial and temporal scales
 
 >- App/web service
 >- Linking researchers with participants (or parents)
->- Participants own/control their data, determine level of sharing (like datawallet.io)
+>- Participants own/control their data, determine level of sharing (like [datawallet.io](https://datawallet.io/))
 >- Lab, computer/smart-phone based, survey tasks
 >- Data visualizations, dashboard
 >- 1,000+ psych pool/semester, 500K PSU alumni, 1M friends
@@ -531,7 +549,10 @@ And that no single method we use operates across the spatial and temporal scales
 ----
 
 <div class="centered">
-<img src="https://raw.githubusercontent.com/gilmore-lab/psu-child-study-ctr-talk-2016-10-28/master/img/meesearch-logo.jpg" width=900px>
+</br>
+</br>
+</br>
+MeeSearch
 </div>
 
 ## The middle
@@ -566,22 +587,59 @@ The Databservatory will empower the evaluation and analyses of data streams at m
 <iframe src="http://datausa.io">
 </iframe>
 
+## Features
+
+- Threaded comments from submission to pre-publication review to post-publication commentary
+- Analysis, data, visualizations on the fly (e.g., Shiny)
+- Impact/quality factors computed based on multiple criteria 
+
 ## Problems to solve
+
+## Is data 
+
+- A liability?
+    + <http://news.psu.edu/story/447401/2017/01/25/penn-staters-encouraged-protect-personal-information-data-privacy-day>
+- Or, an asset?
+    + <https://www.nytimes.com/2016/11/20/opinion/the-secret-agenda-of-a-facebook-quiz.html>
+
+---
+
+<div class="centered">
+<video width="800" height="600" controls>
+  <source src="https://d17uoaaed42daq.cloudfront.net/cavideos/CA+Election.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+<https://cambridgeanalytica.org/>
+</div>
+
+<div class="notes">
+Video about Cambridge Analytica.
+</div>
+
+## Answer
+
+- Depends on who's asking
+- Let's keep academic social and behavioral science 
+    + relevant
+    + in the public domain
+    + serving the general public good
 
 ## Problems ~~to~~ solved
 
 ## Data harmonization and preparation
 
 - Astro, geo, bio-sciences have common frames of reference, liking variables
-- Essential data linkages
+- Essential data linkages in social/behavioral science
     + People
     + Locations
         - Lat/Lon or Census Block Group/Tract
     + Dates and times
+    + Tasks/behaviors
 
 ## Respecting privacy
 
-- Ask participants permission to share with researchers for research purposes
+- Asking participants **EXPLICIT** permission to share with researchers for research purposes
 
 <div class="centered">
 <img src="https://raw.githubusercontent.com/gilmore-lab/psu-child-study-ctr-talk-2016-10-28/master/img/databrary-release-levels.jpg" height=500px>
@@ -627,8 +685,7 @@ The Human Connectome Project
 </a>
 </div>
 
-
-# Respecting privacy
+## Respecting privacy
 
 - Give participants meaningful ownership over their data
 - Give participants value for contributing
@@ -637,15 +694,19 @@ The Human Connectome Project
 
 - 'Free' service (email, calendar, search, communications platform) vs.
 
-- Contribute to public good
+- Contributions to public good
 - Aid discovery
-- Curiosity
+- Feed curiosity
 - Help institution, community, society
 
-## What do you think?
+## Summing up
 
-- Shall we build it?
-- After all...
+>- "Oh, give me a 'ome, where social scientists roam..."
+>- Recruiting + data collection + harmonization + sharing + mining + publication
+
+>- Shall we build it?
+>- Here and now?
+>- After all...
 
 ----
 
@@ -661,7 +722,7 @@ The Human Connectome Project
 
 ## Stack {.smaller}
 
-This talk was produced in [RStudio](http://rstudio.com) version 1.044 on `r Sys.Date()`. The code used to generate the slides can be found at <http://github.com/gilmore-lab/soda-2017-01-31/>. Information about the R Session that produced the code is as follows:
+This talk was produced in [RStudio](http://rstudio.com) version 1.0.136 on `r Sys.Date()`. The code used to generate the slides can be found at <http://github.com/gilmore-lab/soda-2017-01-31/>. Information about the R Session that produced the code is as follows:
 
 ```{r session-info}
 sessionInfo()
