@@ -16,7 +16,17 @@ output:
     self_contained: true
 ---
 
-# About
+##  {.flexbox .vcenter}
+
+<div class="centered">
+<span class="talktitle">
+**An -ome of our own: Toward a more reproducible, robust, and insightful science of human behavior**
+</span>
+
+### **Rick O. Gilmore**
+
+*Support*: NSF BCS-1147440, NSF BCS-1238599, NICHD U01-HD-076595
+</div>
 
 ---
 
@@ -24,15 +34,7 @@ output:
 - Founding Director of Human Imaging at Penn State's [SLEIC](http://imaging.psu.edu)
 - Co-founder and Co-Director of the [Databrary.org](http://databrary.org) digital library
 - A.B., Cognitive Science, Brown; M.S. & Ph.D., Cognitive Neuroscience, Carnegie Mellon University
-- Folk music, theatre, cycling, hiking, paddling, amateur radio (K3ROG), poetry
-- <http://personal.psu.edu/rog1>, <http://gilmore-lab.github.io>
-
-## Acknowledgments
-
-- [NSF BCS-1238599](http://www.nsf.gov/awardsearch/showAward?AWD_ID=1238599&HistoricalAwards=false)
-- [NICHD U01-HD-076595](https://projectreporter.nih.gov/project_info_description.cfm?aid=8531595&icde=15908155&ddparam=&ddvalue=&ddsub=&cr=1&csb=default&cs=ASC)
-- [Society for Research in Child Development (SRCD)](http://srcd.org)
-- NYU Libraries, NYU IT, IRB, and OSP
+- Folk music, theatre, poetry, cycling, hiking, paddling, amateur radio (K3ROG)
 
 # Prelude
 
@@ -195,13 +197,13 @@ slides > slide:not(.nobackground):after {
 
 "We have empirically assessed the distribution of published effect sizes and estimated power by extracting more than 100,000 statistical records from about 10,000 cognitive neuroscience and psychology papers published during the past 5 years. The reported median effect size was d=0.93 (inter-quartile range: 0.64-1.46) for nominally statistically significant results and d=0.24 (0.11-0.42) for non-significant results. <span class="red">Median power to detect small, medium and large effects was 0.12, 0.44 and 0.73</span>, reflecting no improvement through the past half-century. Power was lowest for cognitive neuroscience journals. 14% of papers reported some statistically significant results, although the respective F statistic and degrees of freedom proved that these were non-significant; <span class="red">p value errors positively correlated with journal impact factors. False report probability is likely to exceed 50\% for the whole literature</span>. In light of our findings the recently reported low replication success in psychology is realistic and worse performance may be expected for cognitive neuroscience."
 
-## Rich man, poor man
+## Rich man...
 
-- New sources of (non-lab-based) data from wearables, social media, electronic education/medical records
-- Vertically siloed
-- Widespread access for research threatens 
-    - individual privacy
-    - intellectual property
+- New data sources 
+    - Wearables 
+    - Electronic education records
+    - Electronic medical records
+    - Social media
  
 ---
 
@@ -211,21 +213,48 @@ slides > slide:not(.nobackground):after {
 <img src="http://blog.storyful.com/wp-content/uploads/sites/5/2016/04/Facebook-create.png" height=225px>
 </div>
 
-## What's at stake?
+## Poor man
 
-- Long history of science denialism/marginalization
-    + Galileo, Darwin, Mann
-    + Consequences of disbelief
-- Science denialism largely sociocultural
-    + Credibility of 'statistics' in question
+<div class="centered">
+<img src="https://media.licdn.com/mpr/mpr/shrinknp_800_800/AAEAAQAAAAAAAAW9AAAAJDRhMTc5OGYyLWE4MzItNDNlOS1hMDJjLTllOGU2ZTNiNmMzNg.jpg" height=450px>
+</div>
+
+<div class="notes">
+Image of silos. But, not only are the data sources vertically siloed. Much of academic research operates in disciplinary, journal, or departmental silos that may or may not fit the full scope of a phenomenon.
+</div>
 
 ---
 
-- Problems humans face in 21st c. require scientific solutions
+<div class="centered">
+<img src="http://cdn2.hubspot.net/hub/134568/file-1208368053-jpg/6-blind-men-hans.jpg" height=450px>
+</div>
+
+<div class="notes">
+And so it may often seem like we are the proverbial blind men studying the elephant from Hindu mythology.
+</div>
+
+## What's at stake?
+
+>- A great deal
+>- Validity of our evidence
+>- Credibility of our arguments
+
+## Science denialism/marginalization
+
+- Long history
+    + Galileo, Darwin, Mann
+    + Consequences of disbelief now sharper
+- Science denialism/marginalization largely [sociocultural](https://www.amazon.com/Denying-Grave-Ignore-Facts-That/dp/0199396604)
+    + [Credibility of 'statistics'](https://www.theguardian.com/politics/2017/jan/19/crisis-of-statistics-big-data-democracy) in question
+
+## 21st c. problems
+
+- Require scientific solutions
     + technical
     + social/political/economic
     + behavioral
-- Fraud/reproducibility problems undermine public trust
+    + in public AND private spheres
+- Fraud/reproducibility undermine public trust
 - Address challenges before opponents do
 - Maintain a robust, non-commercial science of human behavior
 
@@ -701,9 +730,8 @@ The Human Connectome Project
 
 ## Summing up
 
->- "Oh, give me a 'ome, where social scientists roam..."
->- Recruiting + data collection + harmonization + sharing + mining + publication
-
+>- *"Oh, give me a 'ome, where social scientists roam..."*
+>- Recruiting + data collection + harmonization + mining + sharing + open publication
 >- Shall we build it?
 >- Here and now?
 >- After all...
@@ -719,6 +747,13 @@ The Human Connectome Project
 <div class="centered">
 <img src="https://raw.githubusercontent.com/gilmore-lab/psu-stats-smacs-2016-talk/master/img/we_research_penn_state_0.jpg" width=800px>
 </div>
+
+----
+
+<div class="centered">
+<img src="https://raw.githubusercontent.com/gilmore-lab/psu-stats-smacs-2016-talk/master/img/we_research_penn_state_0.jpg" width=800px>
+</div>
+
 
 ## Stack {.smaller}
 
