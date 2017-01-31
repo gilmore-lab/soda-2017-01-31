@@ -661,7 +661,7 @@ Video about Cambridge Analytica.
 
 ## Data harmonization and preparation
 
-- Astro, geo, bio-sciences have common frames of reference, liking variables
+- Astro, geo, bio-sciences have common frames of reference, linking variables
 - Essential data linkages in social/behavioral science
     + People
     + Locations
